@@ -7,6 +7,45 @@
 ::-webkit-scrollbar {
   display: none;
 }
+main {
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 0;
+}
+.submain1 {
+  height: fit-content;
+  width: 80%;
+  position: relative;
+}
+.sm1Left {
+  height: 120vh;
+  width: 90%;
+  background-color: rgb(224, 238, 255);
+  padding: 8%;
+  border-radius: 3%;
+}
+.title {
+  font-size: 80px;
+}
+.para {
+  font-size: 20px;
+  width: 40%;
+}
+.sm1Right {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+.sm1Right video {
+  border-radius: 5%;
+  height: auto;
+  width: 100%;
+}
 footer {
   height: fit-content;
   width: 100vw;
@@ -19,24 +58,38 @@ footer {
     "link1 link1"
     "link2 links"
     "p p";
+  padding: 50px;
 }
 .footLogo {
   grid-area: logo;
+  padding: 20px 0;
+}
+footer a {
+  text-decoration: none;
+  color: rgb(0, 102, 255);
+  margin: 0 10px;
 }
 .footLink1 {
   grid-area: link1;
+  padding: 10px 0;
+  margin: 5px 0;
 }
 .footLink2 {
   grid-area: link2;
+  padding: 10px 0;
+  margin: 5px 0;
 }
 #hr2 {
   display: none;
 }
 .footLinks {
   grid-area: links;
+  padding: 10px 0;
+  margin: 5px 0;
 }
 .footP {
   grid-area: p;
+  margin: 10px 0;
 }
 
 @media (max-width: 576px) {
@@ -54,7 +107,7 @@ footer {
     display: block;
   }
 }
-@media (min-width: 577px) and (max-width: 993px) {
+@media (min-width: 577px) and (max-width: 1045px) {
   footer {
     grid-template-rows: fit-content fit-content fit-content fit-content fit-content fit-content;
     grid-template-columns: 100%;
@@ -69,5 +122,5 @@ footer {
     display: block;
   }
 }
-@media (min-width: 994px) {
+@media (min-width: 1046px) {
 }
