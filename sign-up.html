@@ -1,26 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign Up</title>
-  <link rel="stylesheet" href="sign-up.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venmo - How will you use Venmo?</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Avenir+Next:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sign-up.css">
 </head>
 <body>
-  <div class="form-box">
-    <form class="form">
-      <span class="title">Venmo</span>
-      <span class="subtitle">Create a free account with your email.</span>
-      <div class="form-container">
-        <input type="text" class="input" placeholder="Full Name" required>
-        <input type="email" class="input" placeholder="Email" required>
-        <input type="password" class="input" placeholder="Password" required>
-      </div>
-      <button type="submit">Sign up</button>
-    </form>
-    <div class="form-section">
-      <p>Have an account? <a href="#">Log in</a></p>
-    </div>
-  </div>
+    <header class="header">
+        <div class="logo">venmo</div>
+    </header>
+
+    <main class="main-content">
+        <h1 class="title">How will you use Venmo?</h1>
+
+        <div class="options-container">
+            <div class="option-card">
+                <div class="icon-container personal">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                </div>
+                <h2 class="option-title">Personal</h2>
+                <p class="option-description">Pay and accept money from friends and businesses, emojis and comments encouraged</p>
+            </div>
+
+            <div class="option-card">
+                <div class="icon-container teen">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                    </svg>
+                </div>
+                <h2 class="option-title">Teen</h2>
+                <p class="option-description">Available for teens 13-17 with adult sign up. Pay and accept money from friends—plus, get a debit card.</p>
+            </div>
+
+            <div class="option-card">
+                <div class="icon-container business">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/>
+                    </svg>
+                </div>
+                <h2 class="option-title">Business</h2>
+                <p class="option-description">Accept and manage payments and get noticed by the Venmo community (You'll also get a personal account)</p>
+            </div>
+        </div>
+
+        <button class="get-started-btn">Get started</button>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#" class="footer-link">Contact Us</a>
+            <a href="#" class="footer-link">Manage Cookies</a>
+        </div>
+        <div class="footer-text">
+           Venmo is a service of PayPal, Inc., a licensed provider of money transfer services (NMLS ID: 910457). All money transmission is provided by PayPal, Inc. pursuant to PayPal, Inc.'s licenses. © 2021 PayPal, Inc.
+        </div>
+    </footer>
 </body>
 </html>
