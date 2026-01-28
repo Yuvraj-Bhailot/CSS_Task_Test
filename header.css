@@ -1,0 +1,145 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header{
+   height: 100vh; 
+   width: 100%;
+}
+.header{
+    height: 11%;
+    width: 100%;
+    background-color: white;
+    border: 0.1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    height: 100%;
+    width: 20%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    height: 70%;
+    width: 60%;
+    margin-left: 30%;
+}
+.mid{
+    height: 100%;
+    width: 60%;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+}
+.menu{
+height: 100%;
+width: 60%;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10%;
+/* border: 1px solid; */
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.menu a:hover{
+  background-color: #ddd;
+  color: #005ce6;
+  border-radius: 30px;
+}
+.right{
+    height: 100%;
+    width: 20%;
+    /* border: 1px solid; */
+    visibility: visible;
+    margin-right: 20px;
+}
+.btn{
+    height: 100%;
+    width: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.button{
+    height: 45%;
+    width: 40%;
+    border: none;
+    background-color: #005ce6;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgb(61, 154, 247);
+    border: 1px solid #005ce6;
+    color: white;
+}
+.btn-active{
+    height: 45%;
+    width: 40%;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn-active:hover{
+    background-color: #005ce6;
+    border: 1px solid #005ce6;
+    color: white;
+}
+#bars{
+    visibility: hidden;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+}
+@media(max-width:576px){
+    .header{
+        max-width: 576px;
+        width: 100%;
+    }
+    .left{
+        height: 100%;
+        width: 60%;
+    }
+    .logo{
+        height: 60%;
+        width: 100px;
+    }
+    .mid{
+        visibility: hidden;
+    }
+    .right{
+        visibility: hidden;
+
+    }
+    #bars{
+        visibility: visible;
+        height: 25px;
+        width: 30px;
+        cursor: pointer;
+        margin-right: -3pc;
+    }
+
+}
